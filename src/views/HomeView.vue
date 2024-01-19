@@ -8,7 +8,7 @@ import audioTheNight from '../assets/audio/the_night.mp3';
 import marcoLeft from '../assets/images/left-marco.png';
 import marcoRight from '../assets/images/right-marco.png';
 import cornaDorado from '../assets/images/corona-3.png';
-import vestimenta from '../assets/images/vestimenta.png';
+import vestimenta from '../assets/images/vestimenta1.png';
 import destellos from '../assets/images/destellos.png';
 import espalda from '../assets/images/quince-espalda.jpg'
 import quincernieraDama from '../assets/images/quinceaniera-dama.png'
@@ -61,13 +61,18 @@ onUnmounted(() => {
 <template>
   <main class="min-h-screen overflow-hidden">
     <section class="min-h-screen max-h-screen flex flex-col justify-center items-center py-10 relative">
-      <img :src="rosasLeft" alt=""
+      <!-- <img :src="rosasLeft" alt=""
         class="absolute top-0 -left-8 w-40 transform rotate-[40deg]"
       />
 
       <img :src="rosasRight" alt=""
         class="absolute top-0 -right-8 w-40 transform rotate-[-40deg]"
+      /> -->
+
+      <img :src="rosasCenter" alt=""
+        class="absolute -top-10  w-[100%] transform rotate-[0deg]"
       />
+
       <div
         class="flex flex-col justify-center items-center space-y-4"
       >
@@ -126,9 +131,9 @@ onUnmounted(() => {
 
       <div class="flex justify-center items-center mt-36">
         <div class="text-center">
-        <h3 class="font-humble text-6xl font-light text-[#D3B66E]">Mis</h3>
-        <h3 class="font-humble text-6xl font-light text-[#D3B66E]">15</h3>
-        <h3 class="font-humble text-6xl font-light text-[#D3B66E]">años</h3>
+        <h3 class="font-lora text-6xl font-light text-[#D3B66E]">Mis</h3>
+        <h3 class="font-lora text-6xl font-light text-[#D3B66E]">15</h3>
+        <h3 class="font-lora text-6xl font-light text-[#D3B66E]">años</h3>
       </div>
       </div>
 
@@ -192,7 +197,7 @@ onUnmounted(() => {
     </section>
 
     <section
-      class="min-h-screen max-h-screen relative border-2 border-transparent"
+      class="min-h-[83vh] max-h-screen relative "
     >
     <img :src="mariposaImg" alt=""
       class="absolute top-0 -left-5 w-20 transform rotate-[30deg]"
@@ -215,7 +220,7 @@ onUnmounted(() => {
        </div>
      </div>
      <div
-      class="absolute top-48 w-[80%] -right-10"
+      class="absolute top-48 w-[80%] -right-0"
      >
       <div class="relative flex flex-col justify-center items-center">
         <h3
@@ -233,15 +238,15 @@ onUnmounted(() => {
     /> -->
 
     <img :src="rosasLeft" alt=""
-      class="absolute bottom-24 -left-20 w-3/4 transform rotate-[-60deg]"
+      class="absolute bottom-44 -left-20 w-[20rem] transform rotate-[-60deg] max-w-none"
     />
 
-    <img :src="rosasRight" alt=""
+    <!-- <img :src="rosasRight" alt=""
       class="absolute bottom-7 -left-32 w-3/4 transform rotate-[60deg]"
-    />
+    /> -->
 
     <img :src="destellos" alt=""
-      class="absolute bottom-5 right-0 w-56 transform rotate-[20deg]"
+      class="absolute bottom-20 right-0 w-56 transform rotate-[20deg]"
     />
 
      <!-- <img
@@ -250,7 +255,7 @@ onUnmounted(() => {
       /> -->
     </section>
     <section
-      class="min-h-screen max-h-screen relative"
+      class="min-h-[89vh] max-h-screen relative"
     >
       <div
         class="flex flex-col justify-center items-center mt-16 w-[40%] mx-auto"
@@ -326,17 +331,17 @@ onUnmounted(() => {
     </section> -->
 
     <section
-      class="min-h-screen relative"
+      class="min-h-[20rem] relative"
     >
-      <div class="h-80 w-[75%] border-[0.6rem] border-blue-electrico mx-auto mt-7 relative"> 
+      <!-- <div class="h-80 w-[75%] border-[0.6rem] border-blue-electrico mx-auto mt-7 relative"> 
         <img :src="quinceEspalda" alt="" class="w-full h-full"/>
       
         <img :src="rosasLeft" alt=""
           class="absolute top-0 -left-32 w-[20rem] transform rotate-[-40deg] max-w-none"
         />
-      </div>
+      </div> -->
       <div
-        class="flex flex-col justify-center items-center mt-5 w-[40%] mx-auto"
+        class="flex flex-col justify-center items-center w-[40%] mx-auto"
       >
         <span class="font-lora text-center text-gray-700 font-semibold">
           Por favor confirmar asistencia
@@ -367,9 +372,9 @@ onUnmounted(() => {
         class="absolute bottom-56 right-5 w-20 transform rotate-[30deg]"
       />
 
-      <img :src="destellos" alt=""
+      <!-- <img :src="destellos" alt=""
         class="absolute bottom-0 -left-20 w-56 transform rotate-[0deg]"
-      />
+      /> -->
       <!-- <div
         class="flex flex-col justify-center items-center mt-5 w-[50%] mx-auto "
       >
@@ -404,8 +409,8 @@ onUnmounted(() => {
         
       </div> -->
 
-      <img :src="rosasRight" alt=""
-        class="absolute bottom-0 -right-44 w-3/4 transform rotate-[-130deg]"
+      <img :src="rosasCenter" alt=""
+        class="absolute -bottom-10 right-0 w-full transform rotate-[-180deg]"
       />
     </section>
     <!-- <section
