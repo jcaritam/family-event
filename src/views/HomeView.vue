@@ -22,7 +22,10 @@ import { onMounted, onUnmounted, ref } from 'vue';
 const OFFSET = 5;
 // const timeZone = 'America/United_States';
 const dateEvent = new Date('2024-02-03T18:00:00.000Z');
-// const dateEvent = utcToZonedTime(dateEventUTC, timeZone);
+
+const audioPlayer = ref<HTMLAudioElement | null>(null);
+
+const isPlaying = ref(false);
 
 const countdown = ref({
   days: 0,
@@ -40,6 +43,21 @@ const updateCountDown = () => {
   countdown.value.seconds =  differenceInSeconds(dateEvent, now) % 60;
 };
 
+const play = () => {
+  console.log(audioPlayer.value)
+  if (audioPlayer.value !== null) {
+    audioPlayer.value.play();
+    isPlaying.value = true;
+  }
+};
+
+const pause = () => {
+  if (audioPlayer.value !== null) {
+    audioPlayer.value.pause();
+    isPlaying.value = false;
+  }
+};
+
 let intervalId: number | null = null;
 
 onMounted(() => {
@@ -53,6 +71,14 @@ onUnmounted(() => {
   }
 });
 
+
+const handlerPlay = () => {
+  if (isPlaying.value) {
+    pause();
+  } else {
+    play();
+  }
+};
 
 
 
@@ -162,7 +188,7 @@ onUnmounted(() => {
         <h3 class="font-humble text-5xl text-blue-electrico text-center">Ashley Cristel</h3>
         <p class="font-lora text-center font-semibold text-gray-700 text-sm mt-10">
         Al caer la noche en el cielo millones de estrellas <br>
-        podrás contar...cada una de ellas será un deseo que<br>
+        podrás contar... cada una de ellas será un deseo que<br>
         en mi corazón voy a guardar... dicen que la vida <br>
         es más bella si podemos cumplir lo que soñamos y <br>mi sueño es
         que compartas conmigo la noche de<br>mis 15 AÑOS.</p>
@@ -215,7 +241,7 @@ onUnmounted(() => {
         La familia <br> Carita Mamani
       </h3>
       <p class="px-5 text-center font-lora font-semibold text-[13px] text-gray-700">
-        Invitamos a ustedes a compartir la alegría de la celebración de los 15 años de nuestra hija:<br> <span class="text-lg text-gray-700 font-semibold">Ashley Cristel.</span>
+        Invitamos a ustedes a compartir la alegría de la celebración de los 15 años de nuestra hija:<br> <span class="text-lg text-gray-700 font-semibold">Ashley Cristel</span>
       </p>
        </div>
      </div>
@@ -487,10 +513,24 @@ onUnmounted(() => {
 
     </section> -->
     <div class="hidden">
-      <audio controls autoplay loop>
+      <audio controls loop ref="audioPlayer">
         <source :src="audioTheNight" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
+    </div>
+
+    <div
+      class="fixed bottom-5 right-2 z-50"
+    >
+      <button
+        class="bg-blue-electrico text-white w-14 h-14 rounded-full hover:bg-white hover:text-blue-electrico transition-all duration-300"
+        @click="handlerPlay"
+        >
+      <font-awesome-icon icon="fa-play" class="text-3xl"
+        v-if="!isPlaying"
+      />
+      <font-awesome-icon icon="fa-pause" class="text-3xl" v-if="isPlaying" />
+    </button>
     </div>
     <!-- <TheWelcome /> -->
   </main>
