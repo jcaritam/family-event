@@ -215,7 +215,7 @@ onUnmounted(() => {
         La familia Carita
       </h3>
       <p class="px-5 text-center font-lora font-semibold text-[13px] text-gray-700">
-        invitamos a ustedes a compartir la alegría de la celebración de los 15 años de nuestra hija<br> Ashley Cristel.
+        Invitamos a ustedes a compartir la alegría de la celebración de los 15 años de nuestra hija<br> Ashley Cristel.
       </p>
        </div>
      </div>
@@ -238,7 +238,7 @@ onUnmounted(() => {
     /> -->
 
     <img :src="rosasLeft" alt=""
-      class="absolute bottom-44 -left-20 w-[20rem] transform rotate-[-60deg] max-w-none"
+      class="absolute bottom-32 -left-20 w-[20rem] transform rotate-[-60deg] max-w-none"
     />
 
     <!-- <img :src="rosasRight" alt=""
@@ -356,14 +356,14 @@ onUnmounted(() => {
         >
           Martha M.
         </h3>
-        <a href=""
+        <a href="https://wa.link/a2vgto"
         class="px-2 py-2 bg-blue-electrico text-white rounded-md font-lora mt-4"
         >
           <font-awesome-icon icon="phone" class="text-sm" />
           <span
             class="ml-2"
           >
-            930 000 000
+            931850004
           </span>
         </a>
       </div>
