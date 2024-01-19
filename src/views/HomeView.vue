@@ -246,7 +246,7 @@ onUnmounted(() => {
     /> -->
 
     <img :src="destellos" alt=""
-      class="absolute bottom-20 right-0 w-56 transform rotate-[20deg]"
+      class="absolute bottom-20 -right-14 w-56 transform rotate-[20deg]"
     />
 
     </section>
@@ -255,9 +255,26 @@ onUnmounted(() => {
     <section
       class="min-h-[89vh] max-h-screen relative"
     >
-    <img :src="mariposaImg" alt=""
-      class="absolute -top-20 right-8 w-20 transform rotate-[-30deg]"
+
+    <img :src="destellos" alt=""
+      class="absolute -top-20 -left-44 w-56 transform rotate-[20deg]"
     />
+
+    <img :src="destellos" alt=""
+      class="absolute top-14 -right-40 w-56 transform rotate-[20deg]"
+    />
+    <img :src="mariposaImg" alt=""
+      class="absolute -top-10 right-8 w-20 transform rotate-[-30deg]"
+    />
+
+    <img :src="destellos" alt=""
+      class="absolute bottom-40 -right-14 w-44 transform rotate-[30deg]"
+    />
+
+    <img :src="mariposaImg" alt=""
+      class="absolute bottom-[30rem] left-2 w-20 transform rotate-[30deg]"
+    />
+
       <div
         class="flex flex-col justify-center items-center  w-[40%] mx-auto"
       >
@@ -362,7 +379,7 @@ onUnmounted(() => {
         <h3
           class="font-humble text-2xl text-blue-electrico text-center mt-10"
         >
-          Martha M.
+          Martha Mamamni
         </h3>
         <a href="https://wa.link/a2vgto"
         class="px-2 py-2 bg-blue-electrico text-white rounded-md font-lora mt-4"
@@ -376,8 +393,30 @@ onUnmounted(() => {
         </a>
       </div>
 
+      <div
+        class="flex flex-col justify-center items-center pb-32 w-[40%] mx-auto"
+      >
+        <span
+          class="font-lora text-center text-gray-700 font-semibold text-sm mt-10"
+        >
+          Ultima fecha de confirmación: <br> 27 de Enero
+        </span>
+      </div>
+
       <img :src="mariposaImg" alt=""
-        class="absolute bottom-56 right-5 w-20 transform rotate-[30deg]"
+        class="absolute top-5 left-4 w-20 transform rotate-[30deg]"
+      />
+
+      <img :src="destellos" alt=""
+        class="absolute -top-10 -right-20 w-40 transform rotate-[0deg]"
+      />
+
+      <img :src="destellos" alt=""
+        class="absolute bottom-32 -left-20 w-40 transform rotate-[0deg]"
+      />
+
+      <img :src="mariposaImg" alt=""
+        class="absolute bottom-56 right-5 w-20 transform rotate-[-30deg]"
       />
 
       <!-- <img :src="destellos" alt=""
@@ -447,11 +486,11 @@ onUnmounted(() => {
       />
 
     </section> -->
-    <div>
-      <!-- <audio controls autoplay loop>
+    <div class="hidden">
+      <audio controls autoplay loop>
         <source :src="audioTheNight" type="audio/mpeg">
         Your browser does not support the audio element.
-      </audio> -->
+      </audio>
     </div>
     <!-- <TheWelcome /> -->
   </main>
