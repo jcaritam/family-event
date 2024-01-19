@@ -133,7 +133,7 @@ onUnmounted(() => {
         <div class="text-center">
         <h3 class="font-lora text-6xl font-light text-[#D3B66E]">Mis</h3>
         <h3 class="font-lora text-6xl font-light text-[#D3B66E]">15</h3>
-        <h3 class="font-lora text-6xl font-light text-[#D3B66E]">años</h3>
+        <h3 class="font-lora text-6xl font-light text-[#D3B66E]">Años</h3>
       </div>
       </div>
 
@@ -191,13 +191,13 @@ onUnmounted(() => {
       <p class="font-lora text-center text-sm font-semibold text-gray-700">
           Quiero invitarlos a compartir la magia de <br>
           una noche que será única y<br>
-          sin duda inolvidable
+          sin duda inolvidable.
         </p>
       </div>
     </section>
 
     <section
-      class="min-h-[83vh] max-h-screen relative "
+      class="min-h-[80vh] max-h-screen relative "
     >
     <img :src="mariposaImg" alt=""
       class="absolute top-0 -left-5 w-20 transform rotate-[30deg]"
@@ -211,16 +211,16 @@ onUnmounted(() => {
           alt=""
           class="w-32"
        />
-        <h3 class="font-humble text-2xl text-blue-electrico">
-        La familia Carita
+        <h3 class="font-humble text-2xl text-blue-electrico text-center">
+        La familia <br> Carita Mamani
       </h3>
       <p class="px-5 text-center font-lora font-semibold text-[13px] text-gray-700">
-        Invitamos a ustedes a compartir la alegría de la celebración de los 15 años de nuestra hija<br> Ashley Cristel.
+        Invitamos a ustedes a compartir la alegría de la celebración de los 15 años de nuestra hija:<br> <span class="text-lg text-gray-700 font-semibold">Ashley Cristel.</span>
       </p>
        </div>
      </div>
      <div
-      class="absolute top-48 w-[80%] -right-0"
+      class="absolute top-60 w-[80%] -right-0"
      >
       <div class="relative flex flex-col justify-center items-center">
         <h3
@@ -228,7 +228,7 @@ onUnmounted(() => {
       >
         Padrinos
       </h3>
-      <span class="font-lora font-semibold text-gray-700 text-sm">Errol Pacheco Espinoza.</span>
+      <span class="font-lora font-semibold text-gray-700 text-sm">Errol Pacheco Espinoza</span>
       <span class="font-lora font-semibold text-gray-700 text-sm">Patricia De la Cruz Quispe</span>
       </div>
      </div>
@@ -249,16 +249,17 @@ onUnmounted(() => {
       class="absolute bottom-20 right-0 w-56 transform rotate-[20deg]"
     />
 
-     <!-- <img
-      :src="quinceEspalda" alt=""
-      class="absolute -left-0 top-2 w-[350px] max-w-none"
-      /> -->
     </section>
+
+
     <section
       class="min-h-[89vh] max-h-screen relative"
     >
+    <img :src="mariposaImg" alt=""
+      class="absolute -top-20 right-8 w-20 transform rotate-[-30deg]"
+    />
       <div
-        class="flex flex-col justify-center items-center mt-16 w-[40%] mx-auto"
+        class="flex flex-col justify-center items-center  w-[40%] mx-auto"
       >
         <h3
           class="font-humble text-4xl text-blue-electrico text-center mt-10"
@@ -269,7 +270,7 @@ onUnmounted(() => {
         Sab. 03 de Febrero
       </span>
       </div>
-      <div class="flex flex-col px-10">
+      <div class="flex flex-col px-10 relative z-10">
         <h3
           class="font-humble text-4xl text-blue-electrico text-center mt-10 mb-4"
         >
@@ -291,7 +292,7 @@ onUnmounted(() => {
         <div class="flex justify-center">
           <a href="https://maps.app.goo.gl/y3EqNnrXcq8cntwu5"
           target="_blank"
-          class="px-2 py-2 border-2 border-blue-electrico text-blue-electrico font-medium rounded-md font-lora mt-4 hover:bg-blue-electrico hover:text-white transition-all duration-300"
+          class="px-2 py-2 border-2 bg-blue-electrico border-blue-electrico text-white font-medium rounded-md font-lora mt-4 hover:bg-white hover:text-blue-electrico transition-all duration-300"
         >
           <font-awesome-icon icon="location-dot" class="text-sm" />
            <span
@@ -308,14 +309,14 @@ onUnmounted(() => {
         >
           Vestimenta
         </h3>
-        <span class="font-lora text-center text-gray-700 font-semibold">
+        <span class="font-lora text-center text-gray-700 text-base font-semibold">
           Elegante
         </span>
         <img :src="vestimenta" alt="" class="w-20 mx-auto"/>
 
       </div>
       <img :src="rosasLeft" alt=""
-        class="absolute bottom-36 -left-24 w-3/4 transform rotate-[-40deg]"
+        class="absolute bottom-20 -left-24 w-3/4 transform rotate-[-40deg]"
       />
     </section>
     <!-- <section
@@ -348,7 +349,7 @@ onUnmounted(() => {
         />
       </div> -->
       <div
-        class="flex flex-col justify-center items-center w-[40%] mx-auto"
+        class="flex flex-col justify-center items-center w-[40%] mx-auto mt-10"
       >
         <span class="font-lora text-center text-gray-700 font-semibold">
           Por favor confirmar asistencia
