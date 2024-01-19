@@ -379,7 +379,7 @@ onUnmounted(() => {
         <h3
           class="font-humble text-2xl text-blue-electrico text-center mt-10"
         >
-          Martha Mamamni
+          Martha Mamani
         </h3>
         <a href="https://wa.link/a2vgto"
         class="px-2 py-2 bg-blue-electrico text-white rounded-md font-lora mt-4"
