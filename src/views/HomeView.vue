@@ -70,7 +70,7 @@ onUnmounted(() => {
       /> -->
 
       <img :src="rosasCenter" alt=""
-        class="absolute -top-10  w-[100%] transform rotate-[0deg]"
+        class="absolute -top-10  w-[100%] transform rotate-[0deg] animate__animated animate__backInDown"
       />
 
       <div
@@ -79,11 +79,11 @@ onUnmounted(() => {
         <img :src="imageCorona" alt="" class="w-20">
       <div>
         <div class="flex flex-col justify-center items-center h-full p-3">
-        <span class="font-lora text-4xl font-semibold text-blue-electrico text-center">
+        <span class="font-lora text-4xl font-semibold text-blue-electrico text-center animate__animated animate__bounceIn">
           ¡Queremos<br>celebrarlo contigo!
         </span>
         </div>
-        <div class="space-x-2 flex justify-around">
+        <div class="space-x-2 flex justify-around animate__animated animate__bounceIn">
           <!-- Days -->
           <div class="inline-block text-center">
             <div class="text-3xl font-bold text-blue-electrico font-lora">
