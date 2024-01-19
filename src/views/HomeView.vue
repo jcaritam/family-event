@@ -40,13 +40,11 @@ const updateCountDown = () => {
   countdown.value.seconds =  differenceInSeconds(dateEvent, now) % 60;
 };
 
-let intervalId: number | null | undefined = null;
-
-
+let intervalId: number | null = null;
 
 onMounted(() => {
   updateCountDown();
-  intervalId = setInterval(updateCountDown, 1000);
+  intervalId = setInterval(updateCountDown, 1000) as unknown as number;
 });
 
 onUnmounted(() => {
