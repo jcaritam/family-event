@@ -241,7 +241,7 @@ const handlerPlay = () => {
         La familia <br> Carita Mamani
       </h3>
       <p class="px-5 text-center font-lora font-semibold text-[13px] text-gray-700">
-        Invitamos a ustedes a compartir la alegría de la celebración de los 15 años de nuestra hija:<br> <span class="text-lg text-gray-700 font-semibold">Ashley Cristel</span>
+        Invitamos a ustedes a compartir la alegría de la celebración de los 15 años de nuestra hija:<br> <span class="text-gray-700 font-semibold">Ashley Cristel</span>
       </p>
        </div>
      </div>
@@ -254,8 +254,8 @@ const handlerPlay = () => {
       >
         Padrinos
       </h3>
-      <span class="font-lora font-semibold text-gray-700 text-sm">Errol Pacheco Espinoza</span>
-      <span class="font-lora font-semibold text-gray-700 text-sm">Patricia De la Cruz Quispe</span>
+      <span class="font-lora text-gray-700 font-semibold">Errol Pacheco Espinoza</span>
+      <span class="font-lora text-gray-700 font-semibold">Patricia De la Cruz Quispe</span>
       </div>
      </div>
 
@@ -408,9 +408,9 @@ const handlerPlay = () => {
           Martha Mamani
         </h3>
         <a href="https://wa.link/a2vgto"
-        class="px-2 py-2 bg-blue-electrico text-white rounded-md font-lora mt-4"
+        class="px-2 py-2 bg-blue-electrico text-white rounded-md font-lora mt-4 flex items-center"
         >
-          <font-awesome-icon icon="phone" class="text-sm" />
+         <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg" />
           <span
             class="ml-2"
           >
@@ -520,7 +520,7 @@ const handlerPlay = () => {
     </div>
 
     <div
-      class="fixed bottom-5 right-2 z-50"
+      class="fixed bottom-5 right-4 z-50"
     >
       <button
         class="bg-blue-electrico text-white w-14 h-14 rounded-full hover:bg-white hover:text-blue-electrico transition-all duration-300"

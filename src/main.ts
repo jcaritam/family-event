@@ -8,6 +8,7 @@ import App from './App.vue'
 import router from './router'
 
 import { faPhone, faTicket, faLocationDot, faPlay, faPause } from '@fortawesome/free-solid-svg-icons'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 const app = createApp(App)
 
 app.use(createPinia())
@@ -18,7 +19,8 @@ library.add(
   faTicket,
   faLocationDot,
   faPlay,
-  faPause
+  faPause,
+  faWhatsapp
 );
 
 app
