@@ -158,7 +158,7 @@ onUnmounted(() => {
     </section>
 
     <section class="min-h-screen max-h-screen overflow-hidden relative">
-      <div class="mt-1">
+      <div class="mt-2">
         <h3 class="font-humble text-5xl text-blue-electrico text-center">Ashley Cristel</h3>
         <p class="font-lora text-center font-semibold text-gray-700 text-sm mt-10">
         Al caer la noche en el cielo millones de estrellas <br>
@@ -228,8 +228,8 @@ onUnmounted(() => {
       >
         Padrinos
       </h3>
-      <span class="font-lora font-semibold text-gray-700 text-sm">Patricia de La Cruz</span>
-      <span class="font-lora font-semibold text-gray-700 text-sm">Errol Pacheco</span>
+      <span class="font-lora font-semibold text-gray-700 text-sm">Errol Pacheco Espinoza.</span>
+      <span class="font-lora font-semibold text-gray-700 text-sm">Patricia De la Cruz Quispe</span>
       </div>
      </div>
 
@@ -260,6 +260,11 @@ onUnmounted(() => {
       <div
         class="flex flex-col justify-center items-center mt-16 w-[40%] mx-auto"
       >
+        <h3
+          class="font-humble text-4xl text-blue-electrico text-center mt-10"
+        >
+          Fecha
+        </h3>
         <span class="font-lora text-lg text-center font-semibold text-gray-700">
         Sab. 03 de Febrero
       </span>
@@ -288,8 +293,10 @@ onUnmounted(() => {
           target="_blank"
           class="px-2 py-2 border-2 border-blue-electrico text-blue-electrico font-medium rounded-md font-lora mt-4 hover:bg-blue-electrico hover:text-white transition-all duration-300"
         >
-          <i class="far fa-location-dot text-sm"></i> Ver Ubicación
-          <i class="fa-solid fa-location-dot"></i>
+          <font-awesome-icon icon="location-dot" class="text-sm" />
+           <span
+            class="ml-2"
+           >Ver Ubicación</span>
         </a>
         </div>
       </div>
