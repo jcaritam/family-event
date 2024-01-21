@@ -106,7 +106,7 @@ const handlerPlay = () => {
       <div>
         <div class="flex flex-col justify-center items-center h-full p-3">
         <span class="font-lora text-4xl font-semibold text-blue-electrico text-center animate__animated animate__bounceIn">
-          ¡Queremos<br>celebrarlo contigo!
+          ¡Quiero<br>celebrar contigo!
         </span>
         </div>
         <div class="space-x-2 flex justify-around animate__animated animate__bounceIn">
@@ -233,16 +233,20 @@ const handlerPlay = () => {
     />
     <div class="absolute top-5 w-[80%] right-0">
        <div class="relative flex flex-col justify-center items-center ">
-        <img :src="cornaDorado"
+        <!-- <img :src="cornaDorado"
           alt=""
           class="w-32"
-       />
-        <h3 class="font-humble text-2xl text-blue-electrico text-center">
-        La familia <br> Carita Mamani
+       /> -->
+        <h3 class="font-lora text-center font-semibold text-gray-700">
+        En compañia de:
       </h3>
-      <p class="px-5 text-center font-lora font-semibold text-[13px] text-gray-700">
-        Invitamos a ustedes a compartir la alegría de la celebración de los 15 años de nuestra hija:<br> <span class="text-gray-700 font-semibold">Ashley Cristel</span>
-      </p>
+      <h3
+        class="font-humble text-3xl text-blue-electrico text-center mt-10"
+      >
+        Mis padres
+      </h3>
+      <span class="font-lora text-gray-700 font-semibold">Marco A. Carita Quispe</span>
+      <span class="font-lora text-gray-700 font-semibold">Martha Mamani Quispe</span>
        </div>
      </div>
      <div
@@ -250,9 +254,9 @@ const handlerPlay = () => {
      >
       <div class="relative flex flex-col justify-center items-center">
         <h3
-        class="font-humble text-4xl text-blue-electrico text-center mt-10"
+        class="font-humble text-3xl text-blue-electrico text-center mt-10"
       >
-        Padrinos
+        Mis padrinos
       </h3>
       <span class="font-lora text-gray-700 font-semibold">Errol Pacheco Espinoza</span>
       <span class="font-lora text-gray-700 font-semibold">Patricia De la Cruz Quispe</span>
@@ -402,11 +406,13 @@ const handlerPlay = () => {
       <div
         class="flex flex-col justify-center items-center mt-5 w-[40%] mx-auto"
       >
-        <h3
+        <div class="w-[80vw]">
+          <h3
           class="font-humble text-2xl text-blue-electrico text-center mt-10"
         >
           Martha Mamani
         </h3>
+        </div>
         <a href="https://wa.link/a2vgto"
         class="px-2 py-2 bg-blue-electrico text-white rounded-md font-lora mt-4 flex items-center"
         >
