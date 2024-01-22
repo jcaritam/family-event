@@ -63,6 +63,8 @@ let intervalId: number | null = null;
 onMounted(() => {
   updateCountDown();
   intervalId = setInterval(updateCountDown, 1000) as unknown as number;
+
+  play()
 });
 
 onUnmounted(() => {
